@@ -71,9 +71,9 @@ The script currently supports the following cryptocurrency exchanges:
 ## Notes
 
 - You need to provide your API credentials for the supported exchanges in the `fetch.py` script.
-- For `trades` data, fetched trades are saved directly to the CSV file and can be resumed from the last progress, which is tracked in a progress file. The conversion to Parquet format is performed at the end of the `trades` retrieval.
+- For `trades` data, fetched trades are saved directly to the CSV file and can be resumed from the last progress, which is tracked in a progress file. The conversion to Parquet format is performed at the end of the `trades` retrieval. The progress file is automatically removed upon successful completion.
 - The fetched data will be saved as Parquet and CSV files in the current directory.
-- The script will handle rate limits and automatically pause when needed. A progress file is used to resume fetching from the last progress, and it will be removed upon successful completion.
+- The script will handle rate limits and automatically pause when needed.
 
 ## Contributing
 
