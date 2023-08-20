@@ -8,7 +8,6 @@ import argparse
 import logging
 import json 
 import os
-import json
 import csv
 from datetime import datetime
 
